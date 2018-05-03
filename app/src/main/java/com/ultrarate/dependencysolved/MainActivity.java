@@ -53,12 +53,12 @@ public class MainActivity extends AppCompatActivity {
 
 
     private String displayOrderSummary(int price, String name, boolean check, boolean chocolate) {
-        String display = "Name: "+ name;
+        String display = getString(R.string.order_summary_name, name);
         display += "\nAdd Whipped Cream? " + check;
         display += "\nAdd chocolate? " + chocolate;
         display += "\nQuantity: " + value;
         display += "\nTotal $: "+ price;
-        display += "\nThank You!";
+        display += "\n" + getString(R.string.thankyou);
         return display;
     }
 
